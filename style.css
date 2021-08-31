@@ -1,0 +1,51 @@
+
+body{
+background: rgb(199, 199, 199);
+}
+
+.parent{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 40px;
+    margin: 0 40px;
+}
+
+.player{
+    /* border: 1px solid #a3a3a3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#modal-img{
+    max-height: 300px;
+}
+
+#loader{
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #7272725b;
+
+
+}
+
+#loader img{ 
+    position: relative;
+    top: calc(50% - 100px);
+    left:calc(50% - 100px);  
+    width: 100px;
+}
+
+  /* #player-info a{
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      background: rgb(4, 143, 34);
+  } */

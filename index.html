@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Db</title>
+    <link rel="stylesheet" href="./style.css">
+<!-- bootstrap css  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<div id="loader">
+  <img src="./img/loder.gif" alt="">
+</div>
+<body class="bg-gray">
+    <h1 class="text-center my-3">search Your favourite Player</h1>
+    <header class="row container">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+          <div class="input-group mb-2">
+          <input id="search-input" type="text" class="form-control" placeholder="search Your favourite Player" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button  class="btn btn-primary" onclick="searchTextReady()" type="button" id="search-btn">Button</button>
+        </div>
+        <p id="err-text"   class="text-danger d-none fw-bold mb-4">Please Enter Player Name</p>
+        <h2 id="err-text2"  class="text-danger d-none fw-bold mb-4">NO Result Found</h2>
+        </div>
+    </header>
+    <!-- <img src="./img/player2.jpg" alt=""> -->
+
+    <section class="container py-5 ">
+        <div id="player-parent" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        </div>
+
+    </section>
+
+
+    <!-- modal  -->
+    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img  id="modal-img" class="img-fluid " src="" alt="">
+        <div id="player-info" class="text-start my-4"></div>
+       
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+</body>
+</html>
